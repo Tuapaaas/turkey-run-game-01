@@ -1,0 +1,25 @@
+/* Turkey Run page chrome: centers the canvas on an autumn backdrop. */
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; height: 100%; }
+body {
+  background: #2b1a0e;
+  background-image: radial-gradient(circle at 50% 20%, #4a2c14 0%, #2b1a0e 70%);
+  color: #f6e3c2;
+  font-family: "Trebuchet MS", "Segoe UI", Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#stage { text-align: center; padding: 12px; }
+#game {
+  width: min(96vw, calc(96vh * 16 / 9));
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border: 6px solid #7a4a1f;
+  border-radius: 14px;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.6);
+  background: #f7c873;
+  cursor: pointer;
+}
+#hint { margin: 10px 0 0; font-size: 14px; letter-spacing: 0.4px; opacity: 0.85; }
